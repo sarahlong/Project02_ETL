@@ -1,0 +1,44 @@
+CREATE TABLE twentyten (
+	_state varchar,
+	iyear	 varchar,
+	age	 varchar,
+	educa	 varchar,
+	race2	 varchar,
+	employ	 varchar,
+	marital	 varchar,
+	sex	 varchar,
+	income2	 varchar,
+	genhlth	 varchar,
+	menthlth	 varchar,
+	diabete2	 varchar,
+	checkup1	 varchar,
+	_smoker3	 varchar,
+	_rfdrhv3	 varchar,
+	_totinda	 varchar,
+	_bmi4cat     varchar
+);
+
+select * from twentyten
+ 
+CREATE TABLE a2010 AS 
+TABLE twentyten;
+CREATE TABLE a2011 AS 
+TABLE twentyten;
+CREATE TABLE a2012 AS 
+TABLE twentyten;
+CREATE TABLE a2013 AS 
+TABLE twentyten;
+CREATE TABLE a2014 AS 
+TABLE twentyten;
+CREATE TABLE a2015 AS 
+TABLE twentyten;
+CREATE TABLE a2016 AS 
+TABLE twentyten;
+CREATE TABLE a2017 AS 
+TABLE twentyten;
+ 
+--INSERT INTO twentyten 
+COPY twentyten_old
+FROM 'C:\Users\Sarah\Desktop' DELIMITER ',' CSV HEADER;
+
+COPY twentyten FROM 'C:\Users\Sarah\Documents\UNCCLT201903DATA2\01-Lesson-Plans - Copy\13-ETL-Project\BootCamp_Project_2\Resources' WITH (FORMAT csv);
